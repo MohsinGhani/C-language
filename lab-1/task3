@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int first = 10;
+    int second = 20;
+    int third;
+
+    third = first;
+    first = second;
+    second = third;
+    printf("first = %d", first);
+    printf("\n second = %d", second);
+
+    return 0;
+}
