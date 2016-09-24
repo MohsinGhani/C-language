@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int totalMarks,quizMarks,midTermMarks,finalMarks,obtainMarks;
+    totalMarks = 100;
+    quizMarks = 20;
+    midTermMarks = 30;
+    finalMarks = 50;
+
+    obtainMarks = quizMarks + midTermMarks + finalMarks;
+    float per = obtainMarks * totalMarks / 100;
+
+    printf("Obtain Marks: %d", obtainMarks);
+    printf("\n Total Marks: %.2f", per);
+    return 0;
+}
