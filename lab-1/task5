@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x1,x2,y1,y2,x,y;
+    x2=y2=10;
+    x1=y1=7;
+    x = x2 - x1;
+    y = y2 - y1;
+    float d=sqrt((x*x)+(y*y));
+    printf("the distance is: %.2f", d);
+    return 0;
+}
