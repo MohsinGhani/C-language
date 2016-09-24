@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    float c;
+
+    a = 10;
+    b = 15;
+    c = 12.6;
+    printf("a=%d \n b=%d \n c=%.2f",a,b,c);
+
+    return 0;
+}
