@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int age;
+    int ans;
+
+    printf("Enter Your Age: ");
+    scanf("%d",&age);
+
+    printf("You have NIC Enter 1 for Yes or 2 for No: ");
+    scanf("%d",&ans);
+
+    if(age>=18 && ans == 1){
+        printf("You can do voted");
+    }
+    else{
+        printf("You can not do vote");
+    }
+    return 0;
+}
