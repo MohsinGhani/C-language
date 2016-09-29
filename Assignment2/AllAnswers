@@ -1,0 +1,200 @@
+Answer No.1
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int areaOfRectangle, lengthOfRectangle, widthOfRectangle;
+printf("Please enter the length of the rectangle:");
+scanf("%d",&lengthOfRectangle);
+
+printf("Please enter the width of the rectangle:");
+scanf("%d",&widthOfRectangle);
+
+areaOfRectangle = lengthOfRectangle * widthOfRectangle;
+
+printf("Length of the rectangle: %d", lengthOfRectangle);
+printf("\nWidth of the rectangle: %d", widthOfRectangle);
+printf("\nThe area of the rectangle is: %d", areaOfRectangle);
+getch();
+return 0;
+}
+
+ 
+
+Answer No.2
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int temp;
+printf("Enter the Temperature:");
+scanf("%d", &temp);
+if(temp>35){
+printf("Its hot day!");
+}
+else if(temp>=25)
+{
+printf("Its nice day!");
+}
+else if(temp<25)
+{
+printf("Its cold day!");
+}
+getch();
+return 0;
+}
+
+Answer No.3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+printf("-------------------------------------------------\n");
+printf("This Program test the Triangle valid or not\n");
+printf("-------------------------------------------------\n");
+int a,b,c;
+printf("Enter first angle:");
+scanf("%d", &a);
+printf("Enter second angle:");
+scanf("%d", &b);
+printf("Enter third angle:");
+scanf("%d", &c);
+int result = a+b+c;
+if(result == 180){
+printf("triangle is valid");
+
+}else{
+printf("triangle is not valid");
+}
+getch();
+return 0;
+}
+
+Answer No.4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+int choice;
+printf("Enter 1 for Print diamond pattern\nEnter 2 for Print cross pattern: ");
+scanf("%d",&choice);
+
+if(choice == 1){
+int rows, a, b, space;
+
+printf("Enter number of rows:");
+scanf("%d", &rows);
+
+space = rows - 1;
+for ( b = 1 ; b <= rows ; b++ ) {
+for ( a = 1 ; a <= space ; a++ )
+printf(" ");
+space--;
+for ( a = 1 ; a <= 2*b-1 ; a++)
+printf("*");
+printf("\n");
+}
+
+
+space = 1;
+for ( b = 1 ; b <= rows - 1 ; b++ ) {
+for ( a = 1 ; a <= space; a++)
+printf(" ");
+space++;
+for ( a = 1 ; a <= 2*(rows-b)-1 ; a++ )
+printf("*");
+printf("\n");
+}
+}
+else if(choice == 2)
+{
+int rows, a, b, space;
+
+printf("Enter number of rows:");
+scanf("%d", &rows);
+
+space = 1;
+for ( b = 1 ; b <= rows - 1 ; b++ ) {
+for ( a = 1 ; a <= space; a++)
+printf(" ");
+space++;
+for ( a = 1 ; a <= 2*(rows-b)-1 ; a++ )
+printf("*");
+printf("\n");
+}
+
+
+space = rows - 1;
+for ( b = 1 ; b <= rows ; b++ ) {
+for ( a = 1 ; a <= space ; a++ )
+printf(" ");
+space--;
+for ( a = 1 ; a <= 2*b-1 ; a++)
+printf("*");
+printf("\n");
+}}
+else{
+printf("You Enter Wrong key Please Enter 1 or 2");
+}
+getch ();
+}
+
+Answer No.5
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+printf("-------------------------------------------------\n");
+printf("This Program Find The Larger Number from Three\n");
+printf("-------------------------------------------------\n");
+
+int n1, n2, n3;
+
+printf("Enter First numbers: ");
+scanf("%d", &n1);
+
+printf("Enter Second numbers: ");
+scanf("%d",&n2);
+
+printf("Enter Third numbers: ");
+scanf("%d",&n3);
+
+if( n1>=n2 && n1>=n3 ){
+printf("%d is the largest number.", n1);
+}
+if( n2>=n1 && n2>=n3 ){
+printf("%d is the largest number.", n2);
+}
+if( n3>=n1 && n3>=n2 ){
+printf("%d is the largest number.", n3);
+}
+getch();
+}
+
+Answer No.6
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+int one = 20, two = 5;
+
+printf("Before Swapping: two = %d, one = %d \n", two, one);
+one = one + two;
+y = one - two;
+one = one - two;
+
+printf("After Swapping: one = %d, two = %d", one, two);
+
+getch();
+}
