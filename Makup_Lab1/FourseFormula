@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int f,g,G1,G2,r;
+    printf("Enter the g Value: ");
+    scanf("%d",&g);
+
+    printf("Enter the G1 Value: ");
+    scanf("%d",&G1);
+
+    printf("Enter the G2 Value: ");
+    scanf("%d",&G2);
+
+    printf("Enter the r Value: ");
+    scanf("%d",&r);
+
+    f = (g*G1*G2)/pow(r,2);
+    printf("%d",f);
+    return 0;
+}
+
