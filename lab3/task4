@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int first,second,third;
+    printf("Enter first number: ");
+    scanf("%d", &first);
+
+    printf("Enter first number: ");
+    scanf("%d", &second);
+
+    printf("Enter first number: ");
+    scanf("%d", &third);
+
+    if(second<first && third<first){
+        printf("The First Number is Greater: %d", first);
+    }
+    else if(first<second && third<second){
+        printf("The Second Number is Grater: %d", second);
+    }
+    else if(first<third && second<third){
+        printf("The Third Number is Grater: %d", third);
+    }
+    else{
+        printf("More than One Number are same");
+    }
+    return 0;
+}
