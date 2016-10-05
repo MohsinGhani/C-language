@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int per = 60;
+
+if(per>90)
+    {
+        printf("A Grade");
+    }
+    else if(per>=70 && 90>per)
+    {
+        printf("B Grade");
+    }
+    else if(per>=50 && 70>per)
+    {
+        printf("C Grade");
+    }
+    else if(per<50)
+    {
+        printf("Fail");
+    }
+    else
+    {
+        printf("You Enter wrong value");
+    }
+    return 0;
+}
