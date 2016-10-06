@@ -6,7 +6,7 @@
 int main()
 {
     int i;                  //1.Declear a varable i
-    for(i=20; i>=11; i--){  //2.Assign a Value in i 20 kyu k humko loog 20 se start karna hai. 
+    for(i=20; i>=11; i--){  //2.Assign a Value in i 20 kyu k humko loop 20 se start karna hai. 
         printf("%d\n",i);   //3.Make a condition "i>=11" matlab jub tak i 11 se greater rahega for loog chalta rahega
     }                       //4.condition k baad hum increment(i++) ya Decrement(i--) use karty hn yaha humko
     return 0;               //  loop 20 se 11 chalana hai yaani 20 me se her dafa 1 minus karna hai is waja se Decreament(i--) use hoga
@@ -15,10 +15,10 @@ int main()
 //Subse pehly humne i=20 rakha yaani jub pehli baar loop chalega to ye conditon hogi (i>11 yaani 20>11),True 
 //Phir Print hoga 20 kyu k i 20 hai is waqt, Phir Decrement(i--) hoga yaha i hamara 20 hai to isme se 1 minus hojaega yaani ab i=19 hogaya
 
-//Ab loog 2nd time chalega to i=19 hoga yanai condition ye hogi (i>11 yaani 19>11),True
+//Ab loop 2nd time chalega to i=19 hoga yanai condition ye hogi (i>11 yaani 19>11),True
 //Phir Print hoga 19 kyu k i is waqt 19 hai, Phir Decrement(i--) hoga yaha i hamara 19 hai to isme se 1 minus hojaega yaani ab i=18 hogaya
 
-//Ab isi tarha loog chalta jaega end me i hamara 10 hojaega yaani Condition is tarha ki hojaegi (i>=11 / 10>=11), False
-//Condition false hogai yaha is waja se loog stop hojaega..
+//Ab isi tarha loop chalta jaega end me i hamara 10 hojaega yaani Condition is tarha ki hojaegi (i>=11 / 10>=11), False
+//Condition false hogai yaha is waja se loop stop hojaega..
 
 //Agar isMe koi Galti hui ho to commit karen..
