@@ -1,0 +1,14 @@
+//Question#4:	Write a program that generate numbers from 20 to 11
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int t=2, i, l;
+    for(i=1; i<=10; i++){
+        int l = t*i;
+        printf("%d x %d = %d\n",t,i,l);
+    }
+    return 0;
+}
