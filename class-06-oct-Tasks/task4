@@ -1,0 +1,14 @@
+//Question#5:	Write a program that print table of 2 using for loop.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int t=2, i, l;
+    for(i=1; i<=10; i++){
+        int l = t*i;
+        printf("%d x %d = %d\n",t,i,l);
+    }
+    return 0;
+}
