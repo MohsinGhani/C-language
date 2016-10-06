@@ -1,0 +1,13 @@
+//Question#3:	Write a program that generate number 1 to 10 in horizontal order
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    for(i=1; i<=10; i++){
+        printf("%d",i);
+    }
+    return 0;
+}
