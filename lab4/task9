@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Write a C program to print sum of all even numbers between 1 to n.
+
+int main()
+{
+    int num = 1;
+    int length;
+    int sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &length);
+    while(num <= length)
+    {
+        if(num%2 == 0)
+        {
+            printf("%d\n", num);
+            sum = sum + num;
+        }
+        num++;
+    }
+    printf("Sum of all odd numbers: %d", sum);
+
+    return 0;
+}
