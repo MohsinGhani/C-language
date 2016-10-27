@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,n;
+    float harmonic,temp,value, sum = 0;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i++) //jo value user enter karega utni dafa ye loop chalega "i<=n" Ex: user ne enter kiya 4
+    {
+        printf("Please Enter a number %d: ", i);
+        scanf("%f", &value); // jo value user ne di utni dafa user se number lega or number ko float value me store kardega
+        temp = 1/value; // 1/userInput (harmonic ka formula mein denominator dekhein, 1/a.i) 
+        sum = sum + temp; ab temp variable ki jo value hogi usko "sum" mein save kardega pluse kar kar k
+    }
+    harmonic = n/sum; finally n ko sum se devide kardega 
+    printf("Harmonic: %.3f", harmonic);
+    return 0;
+}
