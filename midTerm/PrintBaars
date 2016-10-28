@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,j,k,rows,col;
+    printf("Enter Rows: ");
+    scanf("%d", &rows);
+
+    printf("Enter Column: ");
+    scanf("%d", &col);
+    for(i=0; i<rows; i++)
+    {
+        for(j=0; j<col; j++)
+        {
+
+                printf("\\/");
+        }
+        printf("\n");
+        for(k=0; k<col; k++)
+        {
+
+                printf("/\\");
+        }
+        printf("\n");
+    }
+    return 0;
+}
