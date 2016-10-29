@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,x,length;
+    float temp = 1, ans = 1;
+    printf("Enter the Power of e: ");
+    scanf("%d",&x);
+
+    printf("Enter the length of e^x: ");
+    scanf("%d",&length);
+
+    for(i=1;i<=length;i++)
+    {
+        temp = (temp*x)/i;
+        ans = ans + temp;
+    }
+    printf("The Answer of e^%d when length= %d: %f",x,length,ans);
+    return 0;
+}
+
+How it is word?
+int main()
+{
+    int i,x,length;
+    float temp = 1, ans = 1;
+    printf("Enter the Power of e: "); //suppose we enter 5, "x=5"
+    scanf("%d",&x);
+
+    printf("Enter the length of e^x: "); //suppose we enter 4, "length=4"
+    scanf("%d",&length);
+
+    for(i=1; i<=length;i++) //ye loop us waqt tak chalega jub tak "i" equal na hojaye length yaani 4 k, yaani 4 baar chalega
+    {
+        temp = (temp*x)/i; //when Loop run first time(condition: 1<=4): temp 1 tha ab humne 1 ko multiply kardia x se yaani 1*5
+                          //phir iske result ko devide kardia i se (first time i equal hai 1 k yaani) 5/1=5, 5 store hogaya temp mein.                                                
+        ans = ans + temp; //hamary pas ab temp 5 hogaya hai ab humne isko ans mein store kardia
+                          //hamara loop ek baar chal chuka hai jisme ans=5,temp=5 hai, ab hum second time loop ki working dekhty hn
+
+        temp = (temp*x)/i; //when Loop run second time(condition: 2<=4): temp ab 5 ho gaya hai ab humne temp ko multiply kara x se yaani 5 se 5*5=25
+                          //phir iske result yaani 25 ko devide kardia i se (second time i equal hai 2 k yaani) 25/2=12.5, 12.5 store hogaya temp mein.                                           
+        ans = ans + temp; //hamary pas ab temp 12.5 hogaya hai or ans pehly hi 5 tha ab humne 5 mein 12.5 ko pluse kardia (ans=ans+temp)
+                          //ab loop isi tarha 4 baar chalega or her baar temp ki new value ans me add hojaegi
+}
+    printf("The Answer of e^%d when length= %d: %f",x,length,ans); // akhir me ans ko print karwa dengy
+    return 0;
+}
