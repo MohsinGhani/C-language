@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+//3. Write a program to find the average of five numbers using void function
+
+void avg(void);
+int main()
+{
+    avg();
+    return 0;
+}
+
+void avg(void)
+{
+    int n1,n2,n3,n4,n5,sum;
+    float result;
+    printf("Enter the number 1: ");
+    scanf("%d", &n1);    
+    printf("Enter the number 2: ");
+    scanf("%d", &n2);
+    printf("Enter the number 3: ");
+    scanf("%d", &n3);
+    printf("Enter the number 4: ");
+    scanf("%d", &n4);
+    printf("Enter the number 5: ");
+    scanf("%d", &n5);
+    sum = n1+n2+n3+n4+n5;
+    result = sum/2;
+    printf("The average of 5 numbers is: %.2f", result);
+}
