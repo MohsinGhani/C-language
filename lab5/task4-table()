@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+// 4.Write a program of to generate the table from 1-5 natural numbers using void
+
+void table(void);
+
+int main()
+{
+    table();
+    return 0;
+}
+
+void table(void)
+{
+    int num,i,result;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for(i=1; i<=5; i++)
+    {
+        result = num*i;
+        printf("%d x %d = %d\n",num,i,result);
+    }
+}
