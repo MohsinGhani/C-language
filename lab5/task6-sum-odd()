@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+//6.Write a program to take user input for a starting number and ending number then sum the odd numbers using parameters and return value function
+
+int oddNum(int n);
+
+int main()
+{
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d", &n);
+
+    int callFunc= odd(n);
+    printf("The Sum of all odd numbers Between 1 to %d is: %d",n,callFunc);
+    return 0;
+}
+
+int odd(int n)
+{
+    int i,sum = 0;
+    for(i=1; i<=n; i++)
+    {
+        if(i%2 == 0)
+        {
+            sum = sum + i;
+        }
+
+    }
+    return sum;
+}
