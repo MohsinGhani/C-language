@@ -1,0 +1,46 @@
+# include <stdio.h>
+
+int main() {
+
+    char operator;
+    int firstNumber,secondNumber;
+
+    printf("Enter an operator (+, -, *,): ");
+    scanf("%c", &operator);
+
+
+    printf("Enter First Number: ");
+    scanf("%d",&firstNumber);
+
+    printf("Enter Second Number: ");
+    scanf("%d",&secondNumber);
+
+    switch(operator)
+    {
+        int result;
+        case '+':
+            result = firstNumber + secondNumber;
+            printf("%d + %d = %d",firstNumber, secondNumber,result );
+            break;
+
+        case '-':
+            result = firstNumber - secondNumber;
+            printf("%d - %d = %d",firstNumber, secondNumber,result );
+            break;
+
+        case '*':
+            result = firstNumber * secondNumber;
+            printf("%d * %d = %d",firstNumber, secondNumber,result );
+            break;
+
+        case '/':
+            result = firstNumber / secondNumber;
+            printf("%d / %d = %d",firstNumber, secondNumber,result );
+            break;
+
+        default:
+            printf("You Enter wrong operator");
+    }
+
+    return 0;
+}
