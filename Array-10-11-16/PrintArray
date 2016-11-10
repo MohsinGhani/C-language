@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int arr[5],i;
+    for(i=0;i<=4;i++)
+    {
+        printf("Enter the value at %d index: ",i);
+        scanf("%d", &arr[i]);
+    }
+    for(i=0;i<=4;i++)
+    {
+        printf("You Entered value at index %d is: %d\n", i,arr[i]);
+    }
+    return 0;
+}
