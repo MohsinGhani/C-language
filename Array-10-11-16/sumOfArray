@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int arr[5],i,arr1[5],arr2[5];
+    for(i=0;i<=4;i++)
+    {
+        printf("Enter the value in Array One at %d index: ",i);
+        scanf("%d", &arr[i]);
+    }
+    for(i=0;i<=4;i++)
+    {
+        printf("You Entered in value at index %d is: %d\n", i,arr[i]);
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        printf("Enter the in Array Two value at %d index: ",i);
+        scanf("%d", &arr1[i]);
+    }
+    for(i=0;i<=4;i++)
+    {
+        printf("You Entered value at index %d is: %d\n", i,arr1[i]);
+    }
+    for(i=0;i<=4;i++)
+    {
+        arr2[i] = arr[i] + arr1[i];
+        printf("The sum of %d and %d is: %d\n", arr[i],arr1[i],arr2[i]);
+    }
+    return 0;
+}
