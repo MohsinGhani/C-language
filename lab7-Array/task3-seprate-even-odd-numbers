@@ -1,0 +1,25 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+
+
+ int main()
+ {
+     int i,arr[16]={2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+     printf("These numbers are even in this array:\n");
+     for(i=0;i<=15;i++)
+     {
+         if(arr[i]%2 == 0)
+         {
+             printf("Even Numbers: %d\n", arr[i]);
+         }
+     }
+     printf("These numbers are odd in this array:\n");
+     for(i=0;i<=15;i++)
+     {
+         if(arr[i]%2 != 0)
+         {
+             printf("odd Numbers: %d\n", arr[i]);
+         }
+     }
+     return 0;
+ }
