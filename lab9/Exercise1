@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct students{
+    char name[100];
+    int s_id;
+    char semister[10];
+    };
+
+int main()
+{
+    struct students s1,s2,s3,s4,s5;
+    strcpy(s1.name,"Mohsin");
+    s1.s_id = 666;
+    strcpy(s1.semister, "2nd");
+
+    strcpy(s2.name,"Arbaz Khan");
+    s2.s_id = 667;
+    strcpy(s2.semister, "2nd");
+
+    strcpy(s3.name,"Arshad Iqbal");
+    s3.s_id = 785;
+    strcpy(s3.semister, "5nd");
+
+    strcpy(s4.name,"GulKhan Khatak");
+    s4.s_id = 554;
+    strcpy(s4.semister, "4nd");
+
+    strcpy(s5.name,"Afzal Ahmed");
+    s5.s_id = 610;
+    strcpy(s5.semister, "1nd");
+
+    printf("----First Student Information----\n\n");
+    printf("Name of First Student: %s\n",s1.name);
+    printf("ID of First Student: %d\n",s1.s_id);
+    printf("Semister of First Student: %s\n\n",s1.semister);
+
+    printf("----Second Student Information----\n\n");
+    printf("Name of Second Student: %s\n",s2.name);
+    printf("ID of Second Student: %d\n",s2.s_id);
+    printf("Semister of Second Student: %s\n\n",s2.semister);
+
+    printf("----Third Student Information----\n\n");
+    printf("Name of Second Student: %s\n",s3.name);
+    printf("ID of Second Student: %d\n",s3.s_id);
+    printf("Semister of Second Student: %s\n\n",s3.semister);
+
+    printf("----Fourth Student Information----\n\n");
+    printf("Name of Second Student: %s\n",s4.name);
+    printf("ID of Second Student: %d\n",s4.s_id);
+    printf("Semister of Second Student: %s\n\n",s4.semister);
+
+    printf("----Fifth Student Information----\n\n");
+    printf("Name of Second Student: %s\n",s5.name);
+    printf("ID of Second Student: %d\n",s5.s_id);
+    printf("Semister of Second Student: %s\n",s5.semister);
+    return 0;
+}
