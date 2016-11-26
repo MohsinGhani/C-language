@@ -1,0 +1,36 @@
+https://www.youtube.com/watch?v=qqOyy_NjflU&t=104s
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int n;
+    printf("How Many Numbers: ");
+    scanf("%d", &n); // input the length of array
+    int i, grades[n],grades1[n];
+    int sum = 0,sum1 = 0;
+    float avg,s2;
+
+    for(i=1;i<=n;i++)
+    {
+        printf("Enter the number %d: ", i);
+        scanf("%d", &grades[i]);
+        sum = sum + grades[i];
+    }
+    printf("Sum: %d\n", sum);
+    avg = sum/n;
+    //printf("Average of this array: %.2f", avg);
+
+    for(i=1;i<=n;i++)
+    {
+        grades1[i] = pow(grades[i]-avg,2);
+        sum1 = sum1 + grades1[i];
+        printf("%d\n", grades1[i]);
+    }
+    printf("Sum: %d\n", sum1);
+    s2 = sum1/(n-1);
+    printf("%.2f",s2);
+    return 0;
+}
