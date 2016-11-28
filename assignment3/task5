@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int row,col,space,n,length;
+    printf("Enter the rows: ");
+    scanf("%d", &length);
+
+    for(row=0;row<=length;row++){
+        for(space=0; space<=(length-row); space++){
+            printf(" ");
+        }
+        n=1;
+        for(col=0; col<=row;col++){
+            printf(" %d",n);
+            n = n* (row-col) / (col+1);
+        }
+    printf("\n");
+    }
+    return 0;
+}
