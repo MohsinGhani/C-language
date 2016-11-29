@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int magic[10][10];
+    int size;
+    printf("Enter the size of matrix: ");
+    scanf("%d", &size);
+    int start = size/2;
+    magic[0][start] = 1; // assign the value at middle index e.g 3x3 matrix at index 0 "1" 2
+    int max_value = size*size;
+
+    int currentRow;
+    int currentCol;
+    int num,nextRow,nextCol;
+
+    for(num=2,currentRow=0,currentCol=start; num<=max_value; num++)
+    {
+        if((currentCol+1)>(size-1))
+        {
+            nextCol = 0;
+        }
+        else
+        {
+            nextCol = currentCol+1;
+        }
+
+        if((currentRow-1)<0)
+        {
+            nextRow = size-1;
+        }
+        else
+        {
+            nextRow = currentRow-1;
+        }
+
+        if(magic[nextRow][nextCol]>0)
+        {
+            if((currentRow+1)>(size-1))
+            {
+                nextRow = 0;
+            }
+            else
+            {
+                nextRow = currentRow+1;
+                nextCol = currentCol;
+            }
+        }
+
+        currentRow = nextRow;
+        currentCol = nextCol;
+        magic[currentRow][currentCol] = num;
+    }
+
+    int i,j;
+    for(i=0;i<size;i++)
+    {
+        for(j=0;j<size;j++)
+        {
+            printf("%d\t", magic[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
