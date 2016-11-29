@@ -1,0 +1,106 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+//Elements input
+
+int insert(int a[], int size)
+{
+	int i;
+	for(i=0;i<size;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+
+}
+
+//sorting
+
+int sorting(int a[], int sz)
+{
+
+	int i,j;
+
+	for(i=0;i<sz;i++)
+	{
+		for(j=i+1;j<sz;j++)
+		{
+			if(a[i] > a[j])
+			{
+				a[i]=a[i] + a[j];
+				a[j]= a[i] - a[j];
+				a[i]= a[i] - a[j];
+			}
+
+
+		}
+	}
+
+}
+
+
+int main()
+{
+	int sz,i,j,value,pos;
+
+	printf("Enter the size of array :");
+	scanf("%d",&sz);
+
+	int a[sz];
+
+	printf("\nEnter the elements of array :");
+
+	// Taking elements input from user
+
+	insert(a,sz);
+
+	//Sorting array elements
+
+	sorting(a,sz);
+
+
+	//Insertion
+
+
+	printf("Enter the value to insert:");
+	scanf("%d",&value);
+
+	printf("Enter the position where you wanna insert:");
+	scanf("%d",&pos);
+
+
+	// CHecking if the inserted value exist or not
+
+	for(i=0;i<sz;i++)
+	{
+		if(value==a[i])
+		{
+			printf("Enter any other value:");
+			scanf("%d",&value);
+		}
+	}
+
+
+	// Insertion of new elements
+
+	for(i=sz;i>pos;i--)
+	{
+		a[i]=a[i-1];
+	}
+
+	a[pos]=value; // Inserting that value
+
+
+
+	printf("\n");
+
+	printf("Resultant array\n");
+
+	for(i=0;i<sz+1;i++)
+	{
+		printf("%d\n",a[i]);
+	}
+
+	return 0;
+
+}
