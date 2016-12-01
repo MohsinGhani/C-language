@@ -1,0 +1,47 @@
+//Getting and display the data of 3 employee using array of object.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Employee
+{
+    int id;
+    char name[25];
+    int age;
+    long salary
+};
+
+int main()
+{
+    int i;
+    struct Employee emp[3];
+    for(i=0;i<3;i++)
+    {
+        printf("Enter Employee %d ID: ", i+1);
+        scanf("%d", &emp[i].id);
+
+        printf("Write Employee %d Name: ", i+1);
+        scanf("%s", &emp[i].name);
+
+        printf("Write Employee %d Age: ", i+1);
+        scanf("%d", &emp[i].age);
+
+        printf("Enter Employee %d Salary: ", i+1);
+        scanf("%d", &emp[i].salary);
+    }
+    for(i=0;i<3;i++)
+    {
+        printf("Employee %d ID: ", i+1);
+        printf("%d\n", emp[i].id);
+
+        printf("Employee %d Name: ", i+1);
+        printf("%s\n", emp[i].name);
+
+        printf("Employee %d Age: ", i+1);
+        printf("%d\n", emp[i].age);
+
+        printf("Employee %d Salary: ", i+1);
+        printf("%d\n", emp[i].salary);
+    }
+    return 0;
+}
