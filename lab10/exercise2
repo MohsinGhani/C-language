@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Emplayee
+{
+    char name[50];
+    int ssn;
+    int salary;
+    struct date{
+        int date;
+        int month;
+        int year;
+    }date1;
+}emp1;
+
+int main()
+{
+    strcpy(emp1.name, "Moshin");
+    emp1.ssn = 5448;
+    emp1.salary = 20000;
+    emp1.date1.date = 21;
+    emp1.date1.month = 5;
+    emp1.date1.year = 2015;
+    printf("Employee one Name: %s" , emp1.name);
+    printf("\nEmployee one SSN Number: %d\n",emp1.ssn);
+    printf("Employee one Salary: %d\n",emp1.salary);
+    printf("%d %d %d", emp1.date1.date,emp1.date1.month,emp1.date1.year);
+
+    return 0;
+}
