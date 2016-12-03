@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct CP_Course{
+    float quizMarks;
+    float assignMarks;
+    float midMarks;
+    float finalMarks;
+};
+
+int main()
+{
+    int i;
+    struct CP_Course course[5];
+    for(i=0;i<5;i++)
+    {
+        printf("Enter the Quiz Marks of Student %d: ",i+1);
+        scanf("%f", &course[i].quizMarks);
+
+        printf("Enter the Assignment Marks of Student %d: ",i+1);
+        scanf("%f", &course[i].assignMarks);
+
+        printf("Enter the Mid Term Marks of Student %d: ",i+1);
+        scanf("%f", &course[i].midMarks);
+
+        printf("Enter the Final Term Marks of Student %d: ",i+1);
+        scanf("%f", &course[i].finalMarks);
+        printf("\n");
+    }
+    for(i=0;i<5;i++)
+    {
+        printf("Quiz Marks of %d is %.2f:\n",i+1, course[i].quizMarks);
+        printf("Assignment Marks of %d is %.2f:\n",i+1, course[i].assignMarks);
+        printf("Mid Term Marks of %d is %.2f:\n",i+1, course[i].midMarks);
+        printf("Final Term Marks of %d is %.2f:\n",i+1, course[i].finalMarks);
+        printf("\n");
+    }
+    return 0;
+}
