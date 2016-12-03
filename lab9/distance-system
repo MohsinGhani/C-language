@@ -13,7 +13,7 @@ int main()
     printf("Enter feet: ");
     scanf("%d", &d1.feet);
     printf("Enter inches: ");
-    scanf("%.2f", &d1.inch);
+    scanf("%f", &d1.inch);
 
     printf("\n***Enter information for Second Distance***\n");
     printf("Enter feet: ");
@@ -21,7 +21,7 @@ int main()
     //scanf("%d", &d2.feet);
 
     printf("Enter inches: ");
-    scanf("%.2f", &d2.inch);
+    scanf("%f", &d2.inch);
 
     sumOfDistance.feet = d1.feet + d2.feet;
     sumOfDistance.inch = d1.inch + d2.inch;
