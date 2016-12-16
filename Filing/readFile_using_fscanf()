@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *fp;
+    char name[20];
+    int id;
+    fp = fopen("text.txt", "r");
+    fscanf(fp,"%s %d", &name, &id);
+    printf("Name: %s\nID: %d\n", name, id);
+    fclose(fp);
+    return 0;
+}
+/////////////////////////////////////////////////////////
+create file in root folder named: "text.txt" and write some text like:
+Mohsin 0065
