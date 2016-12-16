@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *pFile;
+
+        //Open the file
+        pFile = fopen( "db.txt", "w");
+        if(pFile != NULL)
+        {
+            char name[50];
+            printf("Write Patient Name: ");
+            scanf("%s", &name);
+
+            fprintf(pFile,"Student Name: ");
+            fprintf(pFile,name);
+            
+            fprintf(pFile,"\n");
+            fclose(pFile);
+    }
+    else{
+        printf("Could not open the file.\n");
+    }
+    return 0;
+}
