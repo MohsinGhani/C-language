@@ -6,17 +6,16 @@ int main()
     FILE *pFile;
 
         //Open the file
-        pFile = fopen( "db.txt", "w");
+        pFile = fopen( "db.txt", "w"); // db.txt is file name and "w(write)" is the mood of file
         if(pFile != NULL)
         {
             char name[50];
+            //take user input
             printf("Write Patient Name: ");
             scanf("%s", &name);
-
-            fprintf(pFile,"Student Name: ");
-            fprintf(pFile,name);
             
-            fprintf(pFile,"\n");
+            //print data on File
+            fprintf(pFile,"Student Name: %s\n", name);
             fclose(pFile);
     }
     else{
