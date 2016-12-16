@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *fp;
+    fp = fopen("text.txt", "w"); // a.open file, b.file Name, c.file mood w = write 
+    fprintf(fp,"This is my testing file"); // write some text in the file name "text.txt"
+    fclose(fp); //close file
+    return 0;
+}
