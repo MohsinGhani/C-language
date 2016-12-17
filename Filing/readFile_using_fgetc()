@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *fp;
+    fp = fopen("text.txt", "r");
+    char c;
+    do
+    {
+        c = fgetc(fp);
+        printf("%c", c);
+    }
+    while(c != EOF); // End of File
+    fclose(fp);
+    return 0;
+}
