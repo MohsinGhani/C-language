@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int arr[100],element,position,num,i;
+
+    printf("Enter the length of array: ");
+    scanf("%d", &num);
+    for(i=0;i<num;i++)
+    {
+        printf("Enter the num at %d position: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    //print array before insertion
+    printf("print array before insertion\n");
+    for(i=0;i<num;i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+    //take position and element for insertion
+    printf("\nEnter the position for insert element: ");
+    scanf("%d", &position);
+    printf("Enter the element for insertion: ");
+    scanf("%d", &element);
+
+    //insertion logic
+    i = num - 1; // i = 5
+    while(position <= i)
+    {
+        //swapping
+        arr[i+1] = arr[i];
+        i--;
+    }
+
+    //insert number in array
+    arr[position] = element; // arr[2] = 20;
+    num++;
+    //print array after insertion
+    printf("\nprint array after insertion\n");
+    for(i=0;i<num;i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
