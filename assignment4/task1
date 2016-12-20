@@ -1,0 +1,92 @@
+struct date
+{
+     int month;
+     int day;
+     int year;
+};
+
+int main()
+{
+    int monthMain, dayMain, yearMain;      
+    int totalDays;
+    printf("Enter a Month: ");          
+    scanf("%d", &monthMain);            
+    printf("Enter a Day: ");              
+    scanf("%d", &dayMain);    
+    printf("Enter a Year: "); 
+    scanf("%d", &yearMain);
+    totalDays = days();
+    printf("the date you entered = %d days", totalDays);
+return 0;
+}
+
+int days(struct date *d)
+{
+    int yearCalc, daysAmount;
+    int monthMain, dayMain, yearMain;    
+
+    yearCalc = 1900 * 360;
+    yearMain = (yearMain * 360) - yearCalc;
+
+    if(monthMain == 1)
+    {
+        monthMain = 0;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 2)
+    {
+        monthMain = 30;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 3)
+    {
+        monthMain = 60;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 4)
+    {
+        monthMain = 90;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 5)
+    {
+        monthMain = 120;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 6)
+    {
+        monthMain = 150;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 7)
+    {
+        monthMain = 180;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 8)
+    {
+        monthMain = 210;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 9)
+    {
+        monthMain = 240;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 10)
+    {
+        monthMain = 270;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 11)
+    {
+        monthMain = 300;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    if(monthMain == 12)
+    {
+        monthMain = 360;
+        daysAmount = monthMain + dayMain + yearMain;
+    }
+    return daysAmount;
+}
