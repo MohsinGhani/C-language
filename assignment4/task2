@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct date1
+{
+     int month;
+     int day;
+     int year;
+}d1,d2;
+
+int days()
+{
+
+}
+
+int main()
+{
+    int month, day, year;
+    //int totalDays;
+    printf("** Enter First Date **\n");
+    printf("Enter a Day: ");
+    scanf("%d", &d1.day);
+    printf("Enter a Month: ");
+    scanf("%d", &d1.month);
+    printf("Enter a Year: ");
+    scanf("%d", &d1.year);
+
+    printf("** Enter Second Date **\n");
+    printf("Enter a Day: ");
+    scanf("%d", &d2.day);
+    printf("Enter a Month: ");
+    scanf("%d", &d2.month);
+    printf("Enter a Year: ");
+    scanf("%d", &d2.year);
+    int result = days(d1.day,d1.month,d1.year,d2.day,d2.month,d2.year);
+    month = d2.month - d1.month;
+    day = d2.day - d1.day;
+    year = d2.year - d1.year;
+    printf("Difference between first and second date: %d - %d - %d",day,month,year);
+
+    return 0;
+}
